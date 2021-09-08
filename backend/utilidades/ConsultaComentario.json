@@ -1,0 +1,7 @@
+{
+    "SelectComentario": "SELECT * FROM TBLCOMENTARIOAPLICACION",
+    "SelectComentarioPorApp": "SELECT * FROM TBLCOMENTARIOAPLICACION WHERE codigoAplicacion=?",
+    "InsertarComentario": "INSERT INTO TBLCOMENTARIOAPLICACION(comentario,codigoAplicacion) VALUES(?,?)",
+    "UpdateComentario": "UPDATE TBLCOMENTARIOAPLICACION set comentario=?,codigoAplicacion=? where idImagen=?",
+    "DeleteComentario": "DELETE FROM TBLCOMENTARIOAPLICACION where idImagen=?"
+}

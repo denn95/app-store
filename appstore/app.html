@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amazon Appstore</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css"><!--FontAwesome-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-black fixed-top">
+        
+        
+        <img src="img/logo.png" alt="amazon" >
+        
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                 
+            </li>
+            <li class="nav-item">
+                 
+            </li>
+            <li class="nav-item">
+                 
+            </li>
+            <li class="nav-item dropdown">
+                 <div class="dropdown-menu" aria-labelledby="dropdown01">
+             
+                </div>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-warning my-2 my-sm-0 mr-sm-2" type="button" data-toggle="modal" data-target="#exampleModal">Nueva Aplicación</button>  
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        </nav>
+        
+        <main role="main" class="container">
+        
+            
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <select class="form-control" name="categorias" id="categorias">
+                        <option value="0">Categoría</option>
+                    </select>
+                </div>
+            </div></br></br>
+             
+            <div class="row" id="apps">
+
+            </div> 
+        
+        </main><!-- /.container -->
+              
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="consumo/configuracion.js"></script>
+    <script src="consumo/aplicacion.js"></script>
+
+    
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-md-7">
+                  <label for="nombre">Nombre</label>
+                  <input class="form-control" type="text" name="txtNombre" id="txtNombre" placeholder="Nombre aplicación">
+              </div>
+              <div class="col-md-5">
+                <label for="precio">Precio</label>
+                <input class="form-control" type="text" name="txtPrecio" id="txtPrecio" placeholder="Precio aplicación">
+            </div>
+          </div></br>
+          <div class="row">
+            <div class="col-md-12">
+                <label for="descripcion">Descripción</label>
+                <input class="form-control" type="text" name="txtDescripcion" id="txtDescripcion" placeholder="Descripción aplicación">
+            </div>
+            </div></br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="txtIcono">Elegir ícono</label>
+                    <input type="file" name="txtIcono" id="txtIcono">
+                 
+                </div>
+                </div>
+                <div class="col-md-1 "></div>
+                <div class="col-md-5">
+                  <label for="categoria">Categoría</label>
+                  <input class="form-control" type="text" name="txtCategoria" id="txtCategoria" placeholder="Categoría aplicación">
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cancelar()">Cerrar</button>
+          <button type="button" id="guardar" class="btn btn-primary" onclick="guardarApp()">Guardar aplicación</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>

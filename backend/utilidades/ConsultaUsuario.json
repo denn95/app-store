@@ -1,0 +1,3 @@
+{
+    "SelectUsuarios": "SELECT * FROM TBLUSUARIO WHERE nombre=? AND password=?"
+}

@@ -1,0 +1,7 @@
+{
+    "SelectImg": "SELECT * FROM TBLIMAGENAPLICACION",
+    "SelectImgPorApp": "SELECT * FROM TBLIMAGENAPLICACION WHERE codigoAplicacion=?",
+    "InsertarImg": "INSERT INTO TBLIMAGENAPLICACION(url,codigoAplicacion) VALUES(?,?)",
+    "UpdateImg": "UPDATE TBLIMAGENAPLICACION set url=?,codigoAplicacion=? where idImagen=?",
+    "DeleteImg": "DELETE FROM TBLIMAGENAPLICACION where idImagen=?"
+}

@@ -1,0 +1,7 @@
+{
+    "SelectAplicaciones": "SELECT * FROM TBLAPLICACION",
+    "SelectAplicacionesPorCategoria": "SELECT * FROM TBLAPLICACION WHERE idCategoria=?",
+    "InsertarAplicacion": "INSERT INTO TBLAPLICACION(nombre,precio,descripcion,icono,idCategoria) VALUES(?,?,?,?,?)",
+    "UpdateAplicacion": "UPDATE TBLAPLICACION set nombre=?,precio=?,descripcion=?,icono=?,idCategoria=? where  codigo=?",
+    "DeleteAplicacion": "DELETE FROM TBLAPLICACION where codigo=?"
+}
